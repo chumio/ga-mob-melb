@@ -4,8 +4,7 @@ import UIKit
 
 
 
-knockknock()
-
+		
 func knockknock() {
     print("Who's there?")
     
@@ -84,6 +83,5 @@ telNameAndAge("sam", yearOfBirth: 1970)
 
 // Call knockMultipleTimes
 
-// Call replyWhoIsHere
 
 // Call tellNameAndAge
