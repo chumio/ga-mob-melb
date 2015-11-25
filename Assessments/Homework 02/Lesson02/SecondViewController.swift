@@ -18,6 +18,7 @@ class SecondViewController: UIViewController {
         let def : Int? = Int(value.text!)
         let ans : Int = abc! + def!
        value.text = ("\(ans)")
+        print("TESTING PRINT")
         
         
     }
