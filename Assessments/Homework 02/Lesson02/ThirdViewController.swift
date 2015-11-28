@@ -17,7 +17,7 @@ class ThirdViewController: UIViewController
     @IBAction func calculate(sender: AnyObject)
     {
         let abc : Int? = Int(Number.text!)
-        if abc! % 2 == 0 {
+        if abc! % 2 == 1 {
             print("\(Number.text!) is EVEN")
               
         }

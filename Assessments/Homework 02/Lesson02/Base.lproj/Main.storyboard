@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFb-9H-Aa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346" y="-401"/>
+            <point key="canvasLocation" x="1434" y="-295"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="iRJ-Jo-rYs">
@@ -267,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bic-8V-fDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="-395"/>
+            <point key="canvasLocation" x="2144" y="-300"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="aee-Lw-ved">
@@ -328,10 +328,13 @@
                             <constraint firstItem="uuM-Ik-raV" firstAttribute="top" secondItem="Hpk-q1-6qc" secondAttribute="bottom" constant="21" id="scm-VI-6lk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="enterNumber" destination="Y9T-1j-GS4" id="AnR-aR-52J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LL4-Hq-ZaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2791" y="-386"/>
+            <point key="canvasLocation" x="2921" y="-322"/>
         </scene>
     </scenes>
 </document>

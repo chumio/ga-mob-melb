@@ -10,8 +10,26 @@ import UIKit
 
 class FourthViewController: UIViewController {
     
+    @IBOutlet weak var enterNumber: UITextField!
     @IBAction func Calc(sender: AnyObject) {
         print("Fourth")
+        
+        let fiba = Fibanaci()
+        
+        let myCount : String = (enterNumber.text!)
+        
+        let myIntCount = Int(myCount)!
+        
+        fiba.counter = myIntCount
+        
+        let answer = fiba.fib()
+        
+     
+        
+            
+        
+        print(answer)
+        
     }
     
 /*
