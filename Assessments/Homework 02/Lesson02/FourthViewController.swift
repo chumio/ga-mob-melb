@@ -23,6 +23,7 @@ class FourthViewController: UIViewController {
         fiba.counter = myIntCount
         
         let answer = fiba.fib()
+
         
      
         

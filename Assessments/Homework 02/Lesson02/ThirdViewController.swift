@@ -18,12 +18,12 @@ class ThirdViewController: UIViewController
     {
         let abc : Int? = Int(Number.text!)
         if abc! % 2 == 1 {
-            print("\(Number.text!) is EVEN")
+            print("\(Number.text!) is ODD")
               
         }
         else
         {
-            print("\(Number.text!) is ODD")
+            print("\(Number.text!) is EVEN")
           
         }
     

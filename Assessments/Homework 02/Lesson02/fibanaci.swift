@@ -32,7 +32,7 @@ class Fibanaci: NSObject
           
                         
         }
-        print("at position \(counter) the fibanacci code is  \(var2)")
+        print("At position \(counter) the fibanacci number is  \(var2)")
     }
 }
 
