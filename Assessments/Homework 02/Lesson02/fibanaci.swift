@@ -22,15 +22,14 @@ class Fibanaci: NSObject
         {
             var1 = var1 + var2
             
-            ++loop
+            
+
+            
+            
+            ++loop // add another 1 to the loop before calculating the variable var2
             
             var2 = var1 + var2
-     //       print("\(var1) loop no. \(loop) and counter number \(counter)")
-    //      print("\(var2) loop no. \(loop)")
             
-            
-          
-                        
         }
         print("At position \(counter) the fibanacci number is  \(var2)")
     }

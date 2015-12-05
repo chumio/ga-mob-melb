@@ -14,6 +14,7 @@
 		288349901C0C582F002B69AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2883498E1C0C582F002B69AC /* LaunchScreen.storyboard */; };
 		2883499B1C0C582F002B69AC /* MoreClasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883499A1C0C582F002B69AC /* MoreClasesTests.swift */; };
 		288349A61C0C582F002B69AC /* MoreClasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288349A51C0C582F002B69AC /* MoreClasesUITests.swift */; };
+		288349B41C0C5971002B69AC /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288349B31C0C5971002B69AC /* YearCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		288349A11C0C582F002B69AC /* MoreClasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoreClasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		288349A51C0C582F002B69AC /* MoreClasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreClasesUITests.swift; sourceTree = "<group>"; };
 		288349A71C0C582F002B69AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288349B31C0C5971002B69AC /* YearCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				288349891C0C582F002B69AC /* Main.storyboard */,
 				2883498C1C0C582F002B69AC /* Assets.xcassets */,
 				2883498E1C0C582F002B69AC /* LaunchScreen.storyboard */,
+				288349B31C0C5971002B69AC /* YearCalculator.swift */,
 				288349911C0C582F002B69AC /* Info.plist */,
 			);
 			path = MoreClases;
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				288349881C0C582F002B69AC /* ViewController.swift in Sources */,
+				288349B41C0C5971002B69AC /* YearCalculator.swift in Sources */,
 				288349861C0C582F002B69AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

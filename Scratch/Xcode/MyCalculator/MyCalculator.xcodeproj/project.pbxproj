@@ -97,12 +97,8 @@
 		286902E71C137407000AC996 /* MyCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				286902E81C137407000AC996 /* AppDelegate.swift */,
 				286902EA1C137407000AC996 /* ViewController.swift */,
 				286902EC1C137407000AC996 /* Main.storyboard */,
-				286902EF1C137407000AC996 /* Assets.xcassets */,
-				286902F11C137407000AC996 /* LaunchScreen.storyboard */,
-				286902F41C137407000AC996 /* Info.plist */,
 			);
 			path = MyCalculator;
 			sourceTree = "<group>";
@@ -119,10 +115,23 @@
 		286903071C137407000AC996 /* MyCalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
+				286903161C137468000AC996 /* SupportingFiles */,
 				286903081C137407000AC996 /* MyCalculatorUITests.swift */,
 				2869030A1C137407000AC996 /* Info.plist */,
 			);
 			path = MyCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		286903161C137468000AC996 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				286902F11C137407000AC996 /* LaunchScreen.storyboard */,
+				286902EF1C137407000AC996 /* Assets.xcassets */,
+				286902F41C137407000AC996 /* Info.plist */,
+				286902E81C137407000AC996 /* AppDelegate.swift */,
+			);
+			name = SupportingFiles;
+			path = ../MyCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

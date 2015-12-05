@@ -10,11 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    @IBOutlet weak var Age: UITextField!
+    
+    @IBOutlet weak var Answer: UITextField!
+    
+    @IBAction func Push(sender: AnyObject)
+    
+    {
+        
+    let calculateIt = YearCalculator ()
+        
+        let ageString : String = (Age.text!)
+        let ageInt = Int(ageString)!
+      
+       
+        
+        calculateIt.age = ageInt
+        
+        let result = calculateIt.year
+        
+        
+        print(result)
+      
+        
+        Answer.text = ("\(result)")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

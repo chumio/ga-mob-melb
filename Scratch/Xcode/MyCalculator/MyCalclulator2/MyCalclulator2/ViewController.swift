@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MyCalculator
+//  MyCalclulator2
 //
 //  Created by Charles Caruana on 6/12/2015.
 //  Copyright © 2015 chumio.inc. All rights reserved.
@@ -10,29 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isUserInTheMiddleOfTypingADigit :Bool = false
+    
+    
     @IBOutlet weak var display: UILabel!
-    
-    var userIsInTheMiddleOfTypingANumber: Bool = false
-    
     
     @IBAction func appendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
-        if userIsInTheMiddleOfTypingANumber {
+        
+        if isUserInTheMiddleOfTypingADigit
+        {
+            
+        print("\(digit)")
+        
         display.text = display.text! + digit
-        print("digit = \(digit)")
+            
         } else {
-            display.text = digit
-            userIsInTheMiddleOfTypingANumber = true
+            display.text! = digit
+            isUserInTheMiddleOfTypingADigit = true
             
         }
-    }
-    
-    
-    @IBAction func clear(sender: UIButton) {
-        display.text = "0"
-    }
-    
-    @IBAction func multiple(sender: UIButton) {
+        
+        
     }
     
     
@@ -40,7 +39,9 @@ class ViewController: UIViewController {
     
     
     
-   
+    
+    
+    
     
     
     
