@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2834970D1C2E2A01009E01E2 /* orangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834970C1C2E2A01009E01E2 /* orangeView.swift */; };
 		5DCED98919D8DC9B00DE1DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED98819D8DC9B00DE1DC2 /* AppDelegate.swift */; };
 		5DCED98B19D8DC9B00DE1DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED98A19D8DC9B00DE1DC2 /* ViewController.swift */; };
 		5DCED98E19D8DC9B00DE1DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCED98C19D8DC9B00DE1DC2 /* Main.storyboard */; };
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2834970C1C2E2A01009E01E2 /* orangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orangeView.swift; sourceTree = "<group>"; };
 		5DCED98319D8DC9B00DE1DC2 /* Lesson03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCED98719D8DC9B00DE1DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DCED98819D8DC9B00DE1DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				5DCED98819D8DC9B00DE1DC2 /* AppDelegate.swift */,
 				5DCED98A19D8DC9B00DE1DC2 /* ViewController.swift */,
 				5DCED98C19D8DC9B00DE1DC2 /* Main.storyboard */,
-				2834970C1C2E2A01009E01E2 /* orangeView.swift */,
 				5DCED98F19D8DC9B00DE1DC2 /* Images.xcassets */,
 				5DCED98619D8DC9B00DE1DC2 /* Supporting Files */,
 			);
@@ -218,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2834970D1C2E2A01009E01E2 /* orangeView.swift in Sources */,
 				5DCED9A919D8DF0800DE1DC2 /* ArrayTableViewController.swift in Sources */,
 				5DCED9AB19D8DF4E00DE1DC2 /* Animal.swift in Sources */,
 				5DCED98B19D8DC9B00DE1DC2 /* ViewController.swift in Sources */,
