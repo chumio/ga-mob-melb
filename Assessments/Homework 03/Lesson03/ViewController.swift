@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+<<<<<<< HEAD:Assessments/Homework 3/Lesson03/ViewController.swift
     @IBOutlet weak var swipeMe: UILabel!
 
     @IBOutlet var SwipeIt: UISwipeGestureRecognizer!
@@ -33,6 +34,9 @@ class ViewController: UIViewController {
     }
     
    
+=======
+    @IBOutlet weak var swipe: UILabel!
+>>>>>>> b6158bf600465335dec0c857a45a1d605e953abf:Assessments/Homework 03/Lesson03/ViewController.swift
     /*
     TODO one: Hook up a swipeable area on the home screen that must present a modal dialog when swiped. You must create the modal dialog and present it in CODE (not the storyboard). DONE
     TODO two: Add an imageview to the modal dialog presented in TODO two. DONE
