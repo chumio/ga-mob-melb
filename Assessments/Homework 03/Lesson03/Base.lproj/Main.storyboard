@@ -34,8 +34,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-bY-Vru">
+                                <rect key="frame" x="236" y="382" width="128" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="DB9-Jg-gkA"/>
+                                    <constraint firstAttribute="height" constant="30" id="dwV-ga-14C"/>
+                                </constraints>
+                                <state key="normal" title="Display Table View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-Di-GNm">
-                                <rect key="frame" x="154" y="187" width="294" height="154"/>
+                                <rect key="frame" x="153" y="146" width="294" height="154"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -49,17 +60,6 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-bY-Vru">
-                                <rect key="frame" x="236" y="382" width="128" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="DB9-Jg-gkA"/>
-                                    <constraint firstAttribute="height" constant="30" id="dwV-ga-14C"/>
-                                </constraints>
-                                <state key="normal" title="Display Table View">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -72,6 +72,7 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                     </view>
                     <navigationItem key="navigationItem" id="hzY-Hy-RMA"/>
                     <connections>
+                        <outlet property="swipe" destination="NMl-Di-GNm" id="Q1m-E4-Irn"/>
                         <segue destination="tH5-nV-9zA" kind="show" identifier="show" id="O1F-Kb-DN0"/>
                     </connections>
                 </viewController>

@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28AFF40D1C15B2780073AA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFF40C1C15B2780073AA85 /* AppDelegate.swift */; };
-		28AFF40F1C15B2780073AA85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFF40E1C15B2780073AA85 /* ViewController.swift */; };
-		28AFF4121C15B2780073AA85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AFF4101C15B2780073AA85 /* Main.storyboard */; };
-		28AFF4141C15B2780073AA85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AFF4131C15B2780073AA85 /* Assets.xcassets */; };
-		28AFF4171C15B2780073AA85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AFF4151C15B2780073AA85 /* LaunchScreen.storyboard */; };
+		28AFF44C1C1FF8100073AA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFF44B1C1FF8100073AA85 /* AppDelegate.swift */; };
+		28AFF44E1C1FF8100073AA85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFF44D1C1FF8100073AA85 /* ViewController.swift */; };
+		28AFF4511C1FF8100073AA85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AFF44F1C1FF8100073AA85 /* Main.storyboard */; };
+		28AFF4531C1FF8100073AA85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AFF4521C1FF8100073AA85 /* Assets.xcassets */; };
+		28AFF4561C1FF8100073AA85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AFF4541C1FF8100073AA85 /* LaunchScreen.storyboard */; };
+		28AFF4601C1FFCDD0073AA85 /* ViewControler2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFF45F1C1FFCDD0073AA85 /* ViewControler2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28AFF4091C15B2780073AA85 /* gestureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		28AFF40C1C15B2780073AA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28AFF40E1C15B2780073AA85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28AFF4111C15B2780073AA85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28AFF4131C15B2780073AA85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		28AFF4161C15B2780073AA85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28AFF4181C15B2780073AA85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AFF4481C1FF8100073AA85 /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AFF44B1C1FF8100073AA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28AFF44D1C1FF8100073AA85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28AFF4501C1FF8100073AA85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28AFF4521C1FF8100073AA85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28AFF4551C1FF8100073AA85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28AFF4571C1FF8100073AA85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AFF45F1C1FFCDD0073AA85 /* ViewControler2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControler2.swift; path = ../ViewControler2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28AFF4061C15B2780073AA85 /* Frameworks */ = {
+		28AFF4451C1FF8100073AA85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,79 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28AFF4001C15B2770073AA85 = {
+		28AFF43F1C1FF8100073AA85 = {
 			isa = PBXGroup;
 			children = (
-				28AFF40B1C15B2780073AA85 /* gestureDemo */,
-				28AFF40A1C15B2780073AA85 /* Products */,
+				28AFF44A1C1FF8100073AA85 /* Notifications */,
+				28AFF4491C1FF8100073AA85 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		28AFF40A1C15B2780073AA85 /* Products */ = {
+		28AFF4491C1FF8100073AA85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28AFF4091C15B2780073AA85 /* gestureDemo.app */,
+				28AFF4481C1FF8100073AA85 /* Notifications.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28AFF40B1C15B2780073AA85 /* gestureDemo */ = {
+		28AFF44A1C1FF8100073AA85 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				28AFF41E1C15B2920073AA85 /* New Group */,
-				28AFF40E1C15B2780073AA85 /* ViewController.swift */,
-				28AFF4101C15B2780073AA85 /* Main.storyboard */,
+				28AFF44B1C1FF8100073AA85 /* AppDelegate.swift */,
+				28AFF44D1C1FF8100073AA85 /* ViewController.swift */,
+				28AFF45F1C1FFCDD0073AA85 /* ViewControler2.swift */,
+				28AFF44F1C1FF8100073AA85 /* Main.storyboard */,
+				28AFF4521C1FF8100073AA85 /* Assets.xcassets */,
+				28AFF4541C1FF8100073AA85 /* LaunchScreen.storyboard */,
+				28AFF4571C1FF8100073AA85 /* Info.plist */,
 			);
-			path = gestureDemo;
-			sourceTree = "<group>";
-		};
-		28AFF41E1C15B2920073AA85 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				28AFF40C1C15B2780073AA85 /* AppDelegate.swift */,
-				28AFF4131C15B2780073AA85 /* Assets.xcassets */,
-				28AFF4151C15B2780073AA85 /* LaunchScreen.storyboard */,
-				28AFF4181C15B2780073AA85 /* Info.plist */,
-			);
-			name = "New Group";
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28AFF4081C15B2780073AA85 /* gestureDemo */ = {
+		28AFF4471C1FF8100073AA85 /* Notifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28AFF41B1C15B2780073AA85 /* Build configuration list for PBXNativeTarget "gestureDemo" */;
+			buildConfigurationList = 28AFF45A1C1FF8100073AA85 /* Build configuration list for PBXNativeTarget "Notifications" */;
 			buildPhases = (
-				28AFF4051C15B2780073AA85 /* Sources */,
-				28AFF4061C15B2780073AA85 /* Frameworks */,
-				28AFF4071C15B2780073AA85 /* Resources */,
+				28AFF4441C1FF8100073AA85 /* Sources */,
+				28AFF4451C1FF8100073AA85 /* Frameworks */,
+				28AFF4461C1FF8100073AA85 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = gestureDemo;
-			productName = gestureDemo;
-			productReference = 28AFF4091C15B2780073AA85 /* gestureDemo.app */;
+			name = Notifications;
+			productName = Notifications;
+			productReference = 28AFF4481C1FF8100073AA85 /* Notifications.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		28AFF4011C15B2780073AA85 /* Project object */ = {
+		28AFF4401C1FF8100073AA85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Charles Caruana";
 				TargetAttributes = {
-					28AFF4081C15B2780073AA85 = {
+					28AFF4471C1FF8100073AA85 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 28AFF4041C15B2780073AA85 /* Build configuration list for PBXProject "gestureDemo" */;
+			buildConfigurationList = 28AFF4431C1FF8100073AA85 /* Build configuration list for PBXProject "Notifications" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,54 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 28AFF4001C15B2770073AA85;
-			productRefGroup = 28AFF40A1C15B2780073AA85 /* Products */;
+			mainGroup = 28AFF43F1C1FF8100073AA85;
+			productRefGroup = 28AFF4491C1FF8100073AA85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28AFF4081C15B2780073AA85 /* gestureDemo */,
+				28AFF4471C1FF8100073AA85 /* Notifications */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		28AFF4071C15B2780073AA85 /* Resources */ = {
+		28AFF4461C1FF8100073AA85 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AFF4171C15B2780073AA85 /* LaunchScreen.storyboard in Resources */,
-				28AFF4141C15B2780073AA85 /* Assets.xcassets in Resources */,
-				28AFF4121C15B2780073AA85 /* Main.storyboard in Resources */,
+				28AFF4561C1FF8100073AA85 /* LaunchScreen.storyboard in Resources */,
+				28AFF4531C1FF8100073AA85 /* Assets.xcassets in Resources */,
+				28AFF4511C1FF8100073AA85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		28AFF4051C15B2780073AA85 /* Sources */ = {
+		28AFF4441C1FF8100073AA85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AFF40F1C15B2780073AA85 /* ViewController.swift in Sources */,
-				28AFF40D1C15B2780073AA85 /* AppDelegate.swift in Sources */,
+				28AFF44E1C1FF8100073AA85 /* ViewController.swift in Sources */,
+				28AFF44C1C1FF8100073AA85 /* AppDelegate.swift in Sources */,
+				28AFF4601C1FFCDD0073AA85 /* ViewControler2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28AFF4101C15B2780073AA85 /* Main.storyboard */ = {
+		28AFF44F1C1FF8100073AA85 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				28AFF4111C15B2780073AA85 /* Base */,
+				28AFF4501C1FF8100073AA85 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		28AFF4151C15B2780073AA85 /* LaunchScreen.storyboard */ = {
+		28AFF4541C1FF8100073AA85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				28AFF4161C15B2780073AA85 /* Base */,
+				28AFF4551C1FF8100073AA85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		28AFF4191C15B2780073AA85 /* Debug */ = {
+		28AFF4581C1FF8100073AA85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +210,7 @@
 			};
 			name = Debug;
 		};
-		28AFF41A1C15B2780073AA85 /* Release */ = {
+		28AFF4591C1FF8100073AA85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,24 +247,24 @@
 			};
 			name = Release;
 		};
-		28AFF41C1C15B2780073AA85 /* Debug */ = {
+		28AFF45B1C1FF8100073AA85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = gestureDemo/Info.plist;
+				INFOPLIST_FILE = Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.gestureDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		28AFF41D1C15B2780073AA85 /* Release */ = {
+		28AFF45C1C1FF8100073AA85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = gestureDemo/Info.plist;
+				INFOPLIST_FILE = Notifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.gestureDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Notifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -276,24 +272,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28AFF4041C15B2780073AA85 /* Build configuration list for PBXProject "gestureDemo" */ = {
+		28AFF4431C1FF8100073AA85 /* Build configuration list for PBXProject "Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28AFF4191C15B2780073AA85 /* Debug */,
-				28AFF41A1C15B2780073AA85 /* Release */,
+				28AFF4581C1FF8100073AA85 /* Debug */,
+				28AFF4591C1FF8100073AA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28AFF41B1C15B2780073AA85 /* Build configuration list for PBXNativeTarget "gestureDemo" */ = {
+		28AFF45A1C1FF8100073AA85 /* Build configuration list for PBXNativeTarget "Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28AFF41C1C15B2780073AA85 /* Debug */,
-				28AFF41D1C15B2780073AA85 /* Release */,
+				28AFF45B1C1FF8100073AA85 /* Debug */,
+				28AFF45C1C1FF8100073AA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 28AFF4011C15B2780073AA85 /* Project object */;
+	rootObject = 28AFF4401C1FF8100073AA85 /* Project object */;
 }

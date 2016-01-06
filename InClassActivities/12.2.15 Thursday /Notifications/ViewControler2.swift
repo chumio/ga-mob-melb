@@ -6,8 +6,18 @@
 //  Copyright © 2015 Charles Caruana. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
-class ViewControler2: UITableViewController {
+class ViewController2: UIViewController {
+    
+    
+    @IBAction func Button(sender: AnyObject) {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("MyAlertNotification", object: "I'm from view controller 2")
+        
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
 
 }
