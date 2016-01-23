@@ -12,16 +12,23 @@ import UIKit
 // Always predifine the array before the class controller 
 
 var myarray2 = ["charlie", "Theresa", "Joanne", "Adrian"]
+var myDict = [String: String]()
+
+
+
+
 
 class MapViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var DictTable: UITableView!
+
 
     
 // Number of section in the table view. eg an a phone book you would have 26 section (the number of letters in the alphabet)
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 4
+        return myDict.count
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -29,9 +36,20 @@ class MapViewController: UIViewController, UITableViewDelegate, UITextFieldDeleg
     
 func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell2");cell!.textLabel!.text = myarray2[indexPath.row]
+        let myDictTitle = [String](myDict.keys)
+        let myDictSub = [String](myDict.values)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell2");cell!.textLabel!.text = myDictTitle[indexPath.row]
+        _ = tableView.dequeueReusableCellWithIdentifier("cell2");cell!.detailTextLabel!.text = myDictSub[indexPath.row]
+    
+      
+        print(UIKeyboardWillShowNotification)
+      
         return cell!
+       
+        
     }
+
 
 
 
@@ -39,18 +57,32 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     
     @IBOutlet weak var textFieldOne: UITextField!
     
+    
     @IBOutlet weak var textFieldTwo: UITextField!
+  
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField == textFieldOne
         {
+            print(UIKeyboardDidShowNotification)
             textFieldTwo.becomeFirstResponder()
         }
         else
         {
+            
             textFieldTwo.resignFirstResponder()
+            myDict[textFieldOne.text!] = textFieldTwo.text
+            
+                print(myDict)
+            textFieldOne.text = ""
+            textFieldTwo.text = ""
+            
+            
+            
+            
+            
         }
-        
+        self.DictTable.reloadData()
         return true
         
     }
@@ -61,8 +93,11 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let UIKeyboardDidShowNotification: String
+        
+        
         /*
-        TODO three: Add TWO text views and a table view to this view controller, either using code or storybaord. 
+        TODO three: Add TWO text views and a table view to this view controller, either using code or storybaord.
                 Accept keyboard input from the two text views. 
                 When the 'return' button is pressed on the SECOND text view, 
                 add the text view data to a dictionary. 
