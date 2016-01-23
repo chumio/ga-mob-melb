@@ -9,9 +9,9 @@
 import UIKit
 
 
+
 // Always predifine the array before the class controller 
 
-var myarray2 = ["charlie", "Theresa", "Joanne", "Adrian"]
 var myDict = [String: String]()
 
 
@@ -20,8 +20,13 @@ var myDict = [String: String]()
 
 class MapViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var DictTable: UITableView!
+  
+  
+    
 
+    
+    @IBOutlet weak var DictTable: UITableView!
+    
 
     
 // Number of section in the table view. eg an a phone book you would have 26 section (the number of letters in the alphabet)
@@ -43,7 +48,6 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
         _ = tableView.dequeueReusableCellWithIdentifier("cell2");cell!.detailTextLabel!.text = myDictSub[indexPath.row]
     
       
-        print(UIKeyboardWillShowNotification)
       
         return cell!
        
@@ -60,28 +64,31 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     
     @IBOutlet weak var textFieldTwo: UITextField!
   
-    
+    func textFieldDidBeginEditing(textFieldOne: UITextField) {
+        textFieldOne.backgroundColor=UIColor.blueColor()
+        textFieldTwo.backgroundColor=UIColor.blueColor()
+        textFieldOne.textColor=UIColor.whiteColor()
+        textFieldTwo.textColor=UIColor.whiteColor()
+    }
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField == textFieldOne
         {
-            print(UIKeyboardDidShowNotification)
+        
             textFieldTwo.becomeFirstResponder()
         }
         else
         {
-            
             textFieldTwo.resignFirstResponder()
             myDict[textFieldOne.text!] = textFieldTwo.text
             
                 print(myDict)
             textFieldOne.text = ""
             textFieldTwo.text = ""
-            
-            
-            
-            
-            
+            textFieldOne.backgroundColor=UIColor.whiteColor()
+            textFieldTwo.backgroundColor=UIColor.whiteColor()
         }
+        
+        
         self.DictTable.reloadData()
         return true
         
@@ -93,7 +100,6 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let UIKeyboardDidShowNotification: String
         
         
         /*
@@ -108,6 +114,6 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
         TODO five: Make the background of the text boxes in this controller BLUE when the keyboard comes up, and RED when it goes down. Start with UIKeyboardWillShowNotification and NSNotificationCenter.
         */
     }
-}
+   }
 
 

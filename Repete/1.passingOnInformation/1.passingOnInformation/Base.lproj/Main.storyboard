@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__passingOnInformation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="New text will appear here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgL-sX-qez">
+                                <rect key="frame" x="20" y="130" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-eE-gmV">
+                                <rect key="frame" x="275" y="239" width="51" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="Update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Zc-39-tt8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TypeSomeTextHere" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N86-oE-gwb">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ez1-eE-gmV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9mH-0a-Xp1"/>
+                            <constraint firstItem="N86-oE-gwb" firstAttribute="top" secondItem="PgL-sX-qez" secondAttribute="bottom" constant="336" id="Q3P-1R-SiY"/>
+                            <constraint firstItem="Ez1-eE-gmV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V3S-4P-1Ks"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PgL-sX-qez" secondAttribute="trailing" id="hOl-PK-HsU"/>
+                            <constraint firstItem="PgL-sX-qez" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hoc-t9-hDZ"/>
+                            <constraint firstItem="N86-oE-gwb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m7H-wN-Ue4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PgL-sX-qez" secondAttribute="leading" id="t3r-Bf-NqA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="N86-oE-gwb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Q3P-1R-SiY"/>
+                                <exclude reference="m7H-wN-Ue4"/>
+                                <exclude reference="hOl-PK-HsU"/>
+                                <exclude reference="hoc-t9-hDZ"/>
+                                <exclude reference="t3r-Bf-NqA"/>
+                                <exclude reference="9mH-0a-Xp1"/>
+                                <exclude reference="V3S-4P-1Ks"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="N86-oE-gwb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Q3P-1R-SiY"/>
+                                <include reference="m7H-wN-Ue4"/>
+                                <include reference="hOl-PK-HsU"/>
+                                <include reference="hoc-t9-hDZ"/>
+                                <include reference="t3r-Bf-NqA"/>
+                                <include reference="9mH-0a-Xp1"/>
+                                <include reference="V3S-4P-1Ks"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="NewTextWillAppearHere" destination="PgL-sX-qez" id="Baa-G5-qVt"/>
+                        <outlet property="TypeSomeText" destination="N86-oE-gwb" id="L8a-jf-B2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+</document>
