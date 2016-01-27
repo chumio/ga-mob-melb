@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iInstalledIt/RegisterPageViewController.swift"
+            timestampString = "475398168.575127"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "RegisterPageViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iInstalledIt.RegisterPageViewController.userEmailTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "iInstalledIt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/iInstalledIt/iInstalledIt/RegisterPageViewController.swift"
+                  timestampString = "475398169.584722"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iInstalledIt.RegisterPageViewController.userEmailTextField.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "iInstalledIt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/iInstalledIt/iInstalledIt/RegisterPageViewController.swift"
+                  timestampString = "475398169.584826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iInstalledIt.RegisterPageViewController.init (iInstalledIt.RegisterPageViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; iInstalledIt.RegisterPageViewController"
+                  moduleName = "iInstalledIt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/iInstalledIt/iInstalledIt/RegisterPageViewController.swift"
+                  timestampString = "475398169.584929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iInstalledIt.RegisterPageViewController.init (iInstalledIt.RegisterPageViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;iInstalledIt.RegisterPageViewController&gt;"
+                  moduleName = "iInstalledIt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/iInstalledIt/iInstalledIt/RegisterPageViewController.swift"
+                  timestampString = "475398169.585037"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iInstalledIt/RegisterPageViewController.swift"
+            timestampString = "475398168.575127"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "displayMyAlertMessage(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
