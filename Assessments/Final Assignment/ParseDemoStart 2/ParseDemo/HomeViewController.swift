@@ -12,7 +12,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    
+        
     @IBOutlet weak var userNameLabel: UILabel!
 
     override func viewDidLoad() {

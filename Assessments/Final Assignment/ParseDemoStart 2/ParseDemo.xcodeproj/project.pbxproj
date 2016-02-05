@@ -23,6 +23,21 @@
 		28A22F291C58CBE40067C9EE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A22F221C58CBE40067C9EE /* Security.framework */; };
 		28A22F2A1C58CBE40067C9EE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A22F231C58CBE40067C9EE /* StoreKit.framework */; };
 		28A22F2B1C58CBE40067C9EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A22F241C58CBE40067C9EE /* SystemConfiguration.framework */; };
+		28BBA2D61C60953E00C53880 /* circle-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2D51C60953E00C53880 /* circle-xl.png */; };
+		28BBA2D81C60954400C53880 /* circle-outline-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2D71C60954400C53880 /* circle-outline-xl.png */; };
+		28BBA2E41C60970400C53880 /* circle-dashed-4-xl-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2D91C60970400C53880 /* circle-dashed-4-xl-1.png */; };
+		28BBA2E51C60970400C53880 /* circle-outline-xl-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2DA1C60970400C53880 /* circle-outline-xl-2.png */; };
+		28BBA2E61C60970400C53880 /* circle-xl-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2DE1C60970400C53880 /* circle-xl-1.png */; };
+		28BBA2E71C60970400C53880 /* circle-outline-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2DF1C60970400C53880 /* circle-outline-xl.png */; };
+		28BBA2E81C60970400C53880 /* circle-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2E01C60970400C53880 /* circle-xl.png */; };
+		28BBA2E91C60970400C53880 /* circle-xl-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2E11C60970400C53880 /* circle-xl-2.png */; };
+		28BBA2EA1C60970400C53880 /* circle-dashed-4-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2E21C60970400C53880 /* circle-dashed-4-xl.png */; };
+		28BBA2EB1C60970400C53880 /* circle-outline-xl-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2E31C60970400C53880 /* circle-outline-xl-1.png */; };
+		28BBA2F11C6098B700C53880 /* Oval 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2EF1C6098B700C53880 /* Oval 1.png */; };
+		28BBA2F21C6098B700C53880 /* Oval 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BBA2F01C6098B700C53880 /* Oval 1@2x.png */; };
+		28BBA2F61C609EC500C53880 /* iStatStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBA2F51C609EC500C53880 /* iStatStartVC.swift */; };
+		28BBA2F81C6230A000C53880 /* jobsCompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBA2F71C6230A000C53880 /* jobsCompletedVC.swift */; };
+		28BBA2FA1C6347FE00C53880 /* JobClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBA2F91C6347FE00C53880 /* JobClass.swift */; };
 		E023470F1B677CD3004F2DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023470E1B677CD3004F2DBE /* AppDelegate.swift */; };
 		E02347141B677CD3004F2DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02347121B677CD3004F2DBE /* Main.storyboard */; };
 		E02347161B677CD3004F2DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02347151B677CD3004F2DBE /* Images.xcassets */; };
@@ -61,6 +76,21 @@
 		28A22F221C58CBE40067C9EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		28A22F231C58CBE40067C9EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		28A22F241C58CBE40067C9EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		28BBA2D51C60953E00C53880 /* circle-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-xl.png"; path = "../../../../../../Desktop/circle-xl.png"; sourceTree = "<group>"; };
+		28BBA2D71C60954400C53880 /* circle-outline-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-outline-xl.png"; path = "../../../../../../Desktop/circle-outline-xl.png"; sourceTree = "<group>"; };
+		28BBA2D91C60970400C53880 /* circle-dashed-4-xl-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-dashed-4-xl-1.png"; path = "../../../../../../Desktop/circle-dashed-4-xl-1.png"; sourceTree = "<group>"; };
+		28BBA2DA1C60970400C53880 /* circle-outline-xl-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-outline-xl-2.png"; path = "../../../../../../Desktop/circle-outline-xl-2.png"; sourceTree = "<group>"; };
+		28BBA2DE1C60970400C53880 /* circle-xl-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-xl-1.png"; path = "../../../../../../Desktop/circle-xl-1.png"; sourceTree = "<group>"; };
+		28BBA2DF1C60970400C53880 /* circle-outline-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-outline-xl.png"; path = "../../../../../../Desktop/circle-outline-xl.png"; sourceTree = "<group>"; };
+		28BBA2E01C60970400C53880 /* circle-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-xl.png"; path = "../../../../../../Desktop/circle-xl.png"; sourceTree = "<group>"; };
+		28BBA2E11C60970400C53880 /* circle-xl-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-xl-2.png"; path = "../../../../../../Desktop/circle-xl-2.png"; sourceTree = "<group>"; };
+		28BBA2E21C60970400C53880 /* circle-dashed-4-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-dashed-4-xl.png"; path = "../../../../../../Desktop/circle-dashed-4-xl.png"; sourceTree = "<group>"; };
+		28BBA2E31C60970400C53880 /* circle-outline-xl-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-outline-xl-1.png"; path = "../../../../../../Desktop/circle-outline-xl-1.png"; sourceTree = "<group>"; };
+		28BBA2EF1C6098B700C53880 /* Oval 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oval 1.png"; path = "../../../../../../Downloads/Oval 1.png"; sourceTree = "<group>"; };
+		28BBA2F01C6098B700C53880 /* Oval 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oval 1@2x.png"; path = "../../../../../../Downloads/Oval 1@2x.png"; sourceTree = "<group>"; };
+		28BBA2F51C609EC500C53880 /* iStatStartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iStatStartVC.swift; path = ../iStatStartVC.swift; sourceTree = "<group>"; };
+		28BBA2F71C6230A000C53880 /* jobsCompletedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = jobsCompletedVC.swift; path = ../jobsCompletedVC.swift; sourceTree = "<group>"; };
+		28BBA2F91C6347FE00C53880 /* JobClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobClass.swift; sourceTree = "<group>"; };
 		E02347091B677CD3004F2DBE /* ParseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E023470D1B677CD3004F2DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E023470E1B677CD3004F2DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,13 +162,28 @@
 		E023470B1B677CD3004F2DBE /* ParseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				28BBA2F71C6230A000C53880 /* jobsCompletedVC.swift */,
+				28BBA2F51C609EC500C53880 /* iStatStartVC.swift */,
+				28BBA2F91C6347FE00C53880 /* JobClass.swift */,
 				E023470E1B677CD3004F2DBE /* AppDelegate.swift */,
 				E02347121B677CD3004F2DBE /* Main.storyboard */,
+				28BBA2EF1C6098B700C53880 /* Oval 1.png */,
+				28BBA2F01C6098B700C53880 /* Oval 1@2x.png */,
 				E023475F1B6BE423004F2DBE /* LoginViewController.swift */,
 				E023475D1B6BE32A004F2DBE /* HomeViewController.swift */,
 				E02347531B6A50F6004F2DBE /* SignUpViewController.swift */,
 				E02347571B6BE242004F2DBE /* ResetPasswordViewController.swift */,
 				E02347151B677CD3004F2DBE /* Images.xcassets */,
+				28BBA2D51C60953E00C53880 /* circle-xl.png */,
+				28BBA2D71C60954400C53880 /* circle-outline-xl.png */,
+				28BBA2D91C60970400C53880 /* circle-dashed-4-xl-1.png */,
+				28BBA2DA1C60970400C53880 /* circle-outline-xl-2.png */,
+				28BBA2DE1C60970400C53880 /* circle-xl-1.png */,
+				28BBA2DF1C60970400C53880 /* circle-outline-xl.png */,
+				28BBA2E01C60970400C53880 /* circle-xl.png */,
+				28BBA2E11C60970400C53880 /* circle-xl-2.png */,
+				28BBA2E21C60970400C53880 /* circle-dashed-4-xl.png */,
+				28BBA2E31C60970400C53880 /* circle-outline-xl-1.png */,
 				E02347171B677CD3004F2DBE /* LaunchScreen.xib */,
 				E023470C1B677CD3004F2DBE /* Supporting Files */,
 			);
@@ -277,6 +322,18 @@
 				E02347141B677CD3004F2DBE /* Main.storyboard in Resources */,
 				E02347191B677CD3004F2DBE /* LaunchScreen.xib in Resources */,
 				E02347161B677CD3004F2DBE /* Images.xcassets in Resources */,
+				28BBA2E61C60970400C53880 /* circle-xl-1.png in Resources */,
+				28BBA2E71C60970400C53880 /* circle-outline-xl.png in Resources */,
+				28BBA2E81C60970400C53880 /* circle-xl.png in Resources */,
+				28BBA2E41C60970400C53880 /* circle-dashed-4-xl-1.png in Resources */,
+				28BBA2EA1C60970400C53880 /* circle-dashed-4-xl.png in Resources */,
+				28BBA2EB1C60970400C53880 /* circle-outline-xl-1.png in Resources */,
+				28BBA2E91C60970400C53880 /* circle-xl-2.png in Resources */,
+				28BBA2D61C60953E00C53880 /* circle-xl.png in Resources */,
+				28BBA2E51C60970400C53880 /* circle-outline-xl-2.png in Resources */,
+				28BBA2F21C6098B700C53880 /* Oval 1@2x.png in Resources */,
+				28BBA2F11C6098B700C53880 /* Oval 1.png in Resources */,
+				28BBA2D81C60954400C53880 /* circle-outline-xl.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +353,10 @@
 			files = (
 				E02347601B6BE423004F2DBE /* LoginViewController.swift in Sources */,
 				E02347581B6BE242004F2DBE /* ResetPasswordViewController.swift in Sources */,
+				28BBA2FA1C6347FE00C53880 /* JobClass.swift in Sources */,
 				E02347541B6A50F6004F2DBE /* SignUpViewController.swift in Sources */,
+				28BBA2F61C609EC500C53880 /* iStatStartVC.swift in Sources */,
+				28BBA2F81C6230A000C53880 /* jobsCompletedVC.swift in Sources */,
 				E023470F1B677CD3004F2DBE /* AppDelegate.swift in Sources */,
 				E023475E1B6BE32A004F2DBE /* HomeViewController.swift in Sources */,
 			);
