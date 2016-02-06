@@ -17,7 +17,14 @@ class ViewController: UIViewController {
 
     
     @IBAction func viewTableArray(sender: AnyObject) {
+        self.performSegueWithIdentifier("tableView", sender: nil)
     }
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var swipeMe: UILabel!
     @IBAction func swipedLeft(sender: UISwipeGestureRecognizer) {
         

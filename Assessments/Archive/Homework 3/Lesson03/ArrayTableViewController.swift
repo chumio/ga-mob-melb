@@ -15,18 +15,20 @@ class ArrayTableViewController: UITableViewController {
     */
     let animalArray = [Animal(name: "Rover"), Animal(name: "Mittens"), Animal(name: "Ein"), Animal(name: "Sadie")]
     
+    let mySubClass = [Animal(name: "Clhoe" ), Animal(name: "Arnie"), Animal(name: "Spegheti")]
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animalArray.count
+        return self.mySubClass.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier") ?? UITableViewCell(style: .Default, reuseIdentifier: "CellIdentifier")
         
-        cell.textLabel?.text = animalArray[indexPath.row].prettyAnimalName()
+        cell.textLabel?.text = mySubClass[indexPath.row].prettyAnimalName()
         
         return cell
     }
