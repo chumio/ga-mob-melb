@@ -12,7 +12,10 @@ import Parse
 
 class Job:  NSObject
 {
-    var jobDate = ""
+    var jobDate = "" // full start date
+    var jobDay = "" // holds the current job's Day Of The Week
+    var jobStartTime = "" // holds the current Stat job as Time
+    var jobFinishTime = "" // holds the current job finish as time only
     var currentJob = ""
     var project = ""
     
@@ -20,21 +23,24 @@ class Job:  NSObject
     var sheetLength:Int? = nil
     var sheetWidth:Int? = nil
     var sheetThick:Int? = nil
+    var elapsedTime:Double = 0.0
 
     
     
- 
+    // combine length width thick and colour
     
     func materialCombined () -> String {
         let sheetLengthString = String(sheetLength!)
         let sheetWidthString = String(sheetWidth!)
         let sheetThickString = String(sheetThick!)
         
-        let result = (colour + " " + sheetLengthString + " x " + sheetWidthString + String(jobDate))
+        let result = (colour + " " + sheetLengthString + " x " + sheetWidthString + " " + sheetThickString + "mm")
          print(result)
         return String(result)
        
     }
+    
+    // get meter2 measure
     
     func getm2 ()-> Double {
         
@@ -48,17 +54,21 @@ class Job:  NSObject
         
     }
     
-    func timeOnly () -> String {
-        let strDate:String = jobDate
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "'T'HH:mm:ssZ"
-        dateFormatter.dateFromString(strDate)
-  print ( dateFormatter.dateFromString( strDate ) )
-        return strDate
+    // get the time it has taken to machine per m2
+    
+    func time2m2 ()-> double_t {
+        print(jobStartTime)
+        
+       let calc = getm2()
+       let result =  (elapsedTime / calc)/60
         
        
-  
+       let newRESULT = NSString(format: "%.2f", result).doubleValue
+        
+        return (newRESULT)
     }
+    
+
     
 
 }

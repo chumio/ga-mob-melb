@@ -8,58 +8,69 @@
 
 import Parse
 import UIKit
+import Foundation
+
 
 class jobsCompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    let collation = UILocalizedIndexedCollation.currentCollation()
+        as UILocalizedIndexedCollation
+   
+    
+    
+    //*********
+    
+    let headerTitles = ["Monday", "Tuesday"]
+    let MyDayArray = [["Moday", "Tuesday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"], ["test"]]
+
     var myArray = []
     var myProject = ["charlie"]
     
     @IBOutlet weak var tableView:UITableView?
-    
-    
-    override func viewDidLoad() {
+      override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func   viewDidAppear(animated: Bool) {
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
        
+        return MyDayArray.count
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return myArray.count
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
+        
+        return headerTitles[section]
     }
     
     
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+//        return myArray.count
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+            return myArray.count
+    }
+
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-       
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        var job = myArray[indexPath.row] as? Job
-        var meter2 = String(job!.getm2())
+        let job = myArray[indexPath.row] as? Job
+        let meter2 = String(job!.getm2())
         var cJob = (job?.currentJob)
-       
         
-        cell.textLabel?.text = (job?.materialCombined())! + " " + meter2 + String(job?.jobDate)
-        cell.detailTextLabel?.text = (job?.project)! + " " + (cJob)!
-        
-        
+        cell.textLabel?.text = (job?.materialCombined())! + " " + meter2 + " " + (job?.jobDay)!
+        cell.detailTextLabel?.text = (job?.project)! + " " + (cJob)! + " Start " + String(job!.jobDate) + " Finish " + String(job!.jobFinishTime) + " " +
+            String(job!.time2m2())
+    
         print(cell.detailTextLabel?.text)
-        
-        
+     
     return cell
-    }
+        }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
-        return 1
-    }// Default is 1 if not implemented
-    
-    
+
    
     
     
