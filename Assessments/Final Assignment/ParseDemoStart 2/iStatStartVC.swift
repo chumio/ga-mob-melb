@@ -137,6 +137,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         completedJob.elapsedTime = Double(counter)
         completedJob.jobFinishTime = timeFin.stringFromDate(timtime)
         completedJob.jobStartTime = jobStartTime
+        completedJob.dayOfTheWeek = startDay
         print("JOB STARTED TIME AT \(completedJob.jobFinishTime)")
         
         

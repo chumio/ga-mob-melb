@@ -19,10 +19,8 @@ class jobsCompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     
     //*********
-    
-    let headerTitles = ["Monday", "Tuesday"]
-    let MyDayArray = [["Moday", "Tuesday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"], ["test"]]
-
+    var myDict:[String:String] = ["Sunday":"", "Monday":"", "Tuesday":""]
+    let MyDayArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     var myArray = []
     var myProject = ["charlie"]
     
@@ -36,14 +34,14 @@ class jobsCompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
        
-        return MyDayArray.count
+        return 7
     }
     
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         
-        return headerTitles[section]
+        return MyDayArray   [section]
     }
     
     
@@ -61,9 +59,18 @@ class jobsCompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         let meter2 = String(job!.getm2())
         var cJob = (job?.currentJob)
         
-        cell.textLabel?.text = (job?.materialCombined())! + " " + meter2 + " " + (job?.jobDay)!
-        cell.detailTextLabel?.text = (job?.project)! + " " + (cJob)! + " Start " + String(job!.jobDate) + " Finish " + String(job!.jobFinishTime) + " " +
-            String(job!.time2m2())
+        
+       
+        let sectionDay = MyDayArray[indexPath.row]
+        print(sectionDay)
+        if job?.jobDay == sectionDay {
+            
+            cell.textLabel?.text = (job?.materialCombined())! + " " + meter2 + " " + (job?.jobDay)!
+            cell.detailTextLabel?.text = (job?.project)! + " " + (cJob)! + " Start " + String(job!.jobDate) + " Finish " + String(job!.jobFinishTime) + " " +
+                String(job!.time2m2())
+        }
+        
+        
     
         print(cell.detailTextLabel?.text)
      

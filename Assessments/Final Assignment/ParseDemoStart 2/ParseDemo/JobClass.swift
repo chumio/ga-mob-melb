@@ -24,6 +24,7 @@ class Job:  NSObject
     var sheetWidth:Int? = nil
     var sheetThick:Int? = nil
     var elapsedTime:Double = 0.0
+    var dayOfTheWeek = ""
 
     
     
