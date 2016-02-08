@@ -18,17 +18,44 @@ struct TableItem {
 
 var sections = Dictionary<String, Array<TableItem>>()
 var sortedSections = [String]()
-
+var machineHaltedTime = ""
 
 class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let secondVC: jobsCompletedVC = segue.destinationViewController as! jobsCompletedVC
         
-        secondVC.myArray = myCompletedJobs
-       
+        if segue.identifier == "start2finish" {
+             let secondVC: jobsCompletedVC = segue.destinationViewController as! jobsCompletedVC
+            secondVC.myArray = myCompletedJobs
+        }
+        else
+        {
+          let intVC: InterruptViewController = segue.destinationViewController as! InterruptViewController
+            
+            intVC.recDate = machineHaltedTime
+        }
     }
     
+    ///   MACHINE HALTED
+    
+    
+    @IBAction func interupt(sender: AnyObject) {
+        
+       var machineHalted = Interrupt()
+        let haltDate = (NSDate())
+        
+        let timeOnly = NSDateFormatter()
+        timeOnly.dateFormat = "h:mm:ss a"
+        let dateString = timeOnly.stringFromDate(haltDate)
+        
+        machineHalted.intDate = dateString
+        machineHaltedTime = dateString
+        print(dateString)
+
+        performSegueWithIdentifier("interrupt", sender: sender)
+        
+        
+    }
     @IBOutlet weak var SizeOutlet: UITextField!
     @IBOutlet weak var ProjectOutlet: UITextField!
     @IBOutlet weak var pickerSize: UIPickerView!
@@ -69,6 +96,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         let strTime = NSDateFormatter()
         strTime.dateFormat = "h:mm:ss a"
+        
         jobStartTime = strTime.stringFromDate(timtime)
         print("JOB START TIME \(jobStartTime)")
         
@@ -162,6 +190,8 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
     let myTestArray = [3600, 3000, 2400, 1200]
     
 
+    
+    // Picker Wheel
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {

@@ -1,5 +1,5 @@
 //
-//  InteruptClass.swift
+//  InterruptClass.swift
 //  StatIT
 //
 //  Created by Charles Caruana on 8/02/2016.
@@ -9,53 +9,20 @@
 import Foundation
 
 
-class Interupt:  NSObject
+class Interrupt:  NSObject
 {
     var intDate = "" // full start date
-    var jobDay = "" // holds the current job's Day Of The Week
-    var jobStartTime = "" // holds the current Stat job as Time
-    var jobFinishTime = "" // holds the current job finish as time only
-    var currentJob = ""
-    var project = ""
-    var colour = ""
-    var sheetLength:Int? = nil
-    var sheetWidth:Int? = nil
-    var sheetThick:Int? = nil
-    var elapsedTime:Double = 0.0
-    var dayOfTheWeek = ""
-    // combine length width thick and colour
-    
-    func materialCombined () -> String {
-        let sheetLengthString = String(sheetLength!)
-        let sheetWidthString = String(sheetWidth!)
-        let sheetThickString = String(sheetThick!)
-        let result = (colour + " " + sheetLengthString + " x " + sheetWidthString + " " + sheetThickString + "mm")
-        print(result)
-        return String(result)
-        
-    }
-    
-    // get meter2 measure
-    
-    func getm2 ()-> Double {
-        
-        let sheetLengthDble = Double(sheetLength!)
-        let sheetWidthDble = Double(sheetWidth!)
-        let result = (sheetLengthDble/1000) * (sheetWidthDble/1000)
-        print (result)
-        return result
-        
-        
-    }
-    
-    // get the time it has taken to machine per m2
-    
-    func time2m2 ()-> double_t {
-        print(jobStartTime)
-        let calc = getm2()
-        let result =  (elapsedTime / calc)/60
-        let newRESULT = NSString(format: "%.2f", result).doubleValue
-        return (newRESULT)
-    }
+    var intDay = "" // holds the current job's Day Of The Week
+    var intStartTime = "" // holds the current Start of the interruption
+    var intFinishTime = "" // holds the current completion  as time only
+    var machineName = ""
+    var intelapsedTime:Double = 0.0
+    var intdayOfTheWeek = ""
+    var intProblem = "" // select the problem that halted the machine
+    var intErrorCodes = "" // enter any error codes that the machine has displayed
+    var intSolved = "" // select how the machine was fixed
+    var intComment = "" // any comment regarding the problem
+    var intTecRequired = "" // yes or no
+    var intTecName = "" // the tech's name
     
 }

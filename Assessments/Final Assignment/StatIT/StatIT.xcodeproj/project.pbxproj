@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287196771C6891BD0040DB75 /* InterruptClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287196761C6891BD0040DB75 /* InterruptClass.swift */; };
+		287196791C68968C0040DB75 /* InterruptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287196781C68968C0040DB75 /* InterruptViewController.swift */; };
+		2871967B1C6896B40040DB75 /* InterruptsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2871967A1C6896B40040DB75 /* InterruptsListViewController.swift */; };
 		28A22F121C58C9D20067C9EE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A22F0C1C58C9D20067C9EE /* Bolts.framework */; };
 		28A22F131C58C9D20067C9EE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A22F0D1C58C9D20067C9EE /* Parse.framework */; };
 		28A22F141C58C9D20067C9EE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A22F0E1C58C9D20067C9EE /* ParseFacebookUtils.framework */; };
@@ -48,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		287196761C6891BD0040DB75 /* InterruptClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterruptClass.swift; sourceTree = "<group>"; };
+		287196781C68968C0040DB75 /* InterruptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterruptViewController.swift; sourceTree = "<group>"; };
+		2871967A1C6896B40040DB75 /* InterruptsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterruptsListViewController.swift; sourceTree = "<group>"; };
 		28A22F0C1C58C9D20067C9EE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		28A22F0D1C58C9D20067C9EE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		28A22F0E1C58C9D20067C9EE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -141,8 +147,11 @@
 				28BBA2F71C6230A000C53880 /* jobsCompletedVC.swift */,
 				28BBA2F51C609EC500C53880 /* iStatStartVC.swift */,
 				28BBA2F91C6347FE00C53880 /* JobClass.swift */,
+				287196761C6891BD0040DB75 /* InterruptClass.swift */,
 				E023470E1B677CD3004F2DBE /* AppDelegate.swift */,
 				E02347121B677CD3004F2DBE /* Main.storyboard */,
+				2871967A1C6896B40040DB75 /* InterruptsListViewController.swift */,
+				287196781C68968C0040DB75 /* InterruptViewController.swift */,
 				E023475F1B6BE423004F2DBE /* LoginViewController.swift */,
 				E023475D1B6BE32A004F2DBE /* HomeViewController.swift */,
 				E02347531B6A50F6004F2DBE /* SignUpViewController.swift */,
@@ -306,12 +315,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02347601B6BE423004F2DBE /* LoginViewController.swift in Sources */,
+				2871967B1C6896B40040DB75 /* InterruptsListViewController.swift in Sources */,
+				287196771C6891BD0040DB75 /* InterruptClass.swift in Sources */,
 				E02347581B6BE242004F2DBE /* ResetPasswordViewController.swift in Sources */,
 				28BBA2FA1C6347FE00C53880 /* JobClass.swift in Sources */,
 				E02347541B6A50F6004F2DBE /* SignUpViewController.swift in Sources */,
 				28BBA2F61C609EC500C53880 /* iStatStartVC.swift in Sources */,
 				28BBA2F81C6230A000C53880 /* jobsCompletedVC.swift in Sources */,
 				E023470F1B677CD3004F2DBE /* AppDelegate.swift in Sources */,
+				287196791C68968C0040DB75 /* InterruptViewController.swift in Sources */,
 				E023475E1B6BE32A004F2DBE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

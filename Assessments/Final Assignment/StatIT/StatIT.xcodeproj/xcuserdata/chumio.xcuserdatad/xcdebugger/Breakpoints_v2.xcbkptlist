@@ -9,105 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iStatStartVC.swift"
-            timestampString = "476406918.952458"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "prepareForSegue(_:sender:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ParseDemo.iStatStartVCController.pickerColourProject.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIPickerView&gt;"
-                  moduleName = "ParseDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chumio/dev/ga-mob-melb/Assessments/Final%20Assignment/ParseDemoStart%202/iStatStartVC.swift"
-                  timestampString = "476263838.620463"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ParseDemo.iStatStartVCController.pickerColourProject.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIPickerView&gt;"
-                  moduleName = "ParseDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chumio/dev/ga-mob-melb/Assessments/Final%20Assignment/ParseDemoStart%202/iStatStartVC.swift"
-                  timestampString = "476263838.622998"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ParseDemo.iStatStartVCController.pickerColourProject.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIPickerView&gt;"
-                  moduleName = "ParseDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chumio/dev/ga-mob-melb/Assessments/Final%20Assignment/ParseDemoStart%202/iStatStartVC.swift"
-                  timestampString = "476263838.623444"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ParseDemo.iStatStartVCController.init (ParseDemo.iStatStartVCController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; ParseDemo.iStatStartVCController"
-                  moduleName = "ParseDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chumio/dev/ga-mob-melb/Assessments/Final%20Assignment/ParseDemoStart%202/iStatStartVC.swift"
-                  timestampString = "476263838.623872"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "235">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ParseDemo.iStatStartVCController.init (ParseDemo.iStatStartVCController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ParseDemo.iStatStartVCController&gt;"
-                  moduleName = "ParseDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chumio/dev/ga-mob-melb/Assessments/Final%20Assignment/ParseDemoStart%202/iStatStartVC.swift"
-                  timestampString = "476263838.624433"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "138">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ParseDemo/JobClass.swift"
-            timestampString = "476497255.635644"
+            timestampString = "476616533.479587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "materialCombined()"
             landmarkType = "5">
          </BreakpointContent>
@@ -119,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParseDemo/JobClass.swift"
-            timestampString = "476497255.635644"
+            timestampString = "476616533.479587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "materialCombined()"
             landmarkType = "5">
          </BreakpointContent>
@@ -135,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParseDemo/JobClass.swift"
-            timestampString = "476497255.635644"
+            timestampString = "476616533.479587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "materialCombined()"
             landmarkType = "5">
          </BreakpointContent>
@@ -174,6 +81,208 @@
             endingLineNumber = "16"
             landmarkName = "numberOfSectionsInTableView(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iStatStartVC.swift"
+            timestampString = "476620103.353386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "iStatStartVCController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.SizeOutlet.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476615880.682271"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.SizeOutlet.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476615880.682503"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.SizeOutlet.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476615880.682626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.init (StatIT.iStatStartVCController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; StatIT.iStatStartVCController"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476615880.682721"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.init (StatIT.iStatStartVCController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;StatIT.iStatStartVCController&gt;"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476615880.682812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iStatStartVC.swift"
+            timestampString = "476627988.024114"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "iStatStartVCController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.startDay.getter : Swift.String"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476622464.986201"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.startDay.setter : Swift.String"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476622464.986407"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.startDay.materializeForSet : Swift.String"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476622464.986504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.init (StatIT.iStatStartVCController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; StatIT.iStatStartVCController"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476622464.9866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "823">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StatIT.iStatStartVCController.init (StatIT.iStatStartVCController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;StatIT.iStatStartVCController&gt;"
+                  moduleName = "StatIT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chumio/ga-mob-melb/Assessments/Final%20Assignment/StatIT/iStatStartVC.swift"
+                  timestampString = "476622464.986691"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "732">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iStatStartVC.swift"
+            timestampString = "476627654.961928"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "interupt(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
