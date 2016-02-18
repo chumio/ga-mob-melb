@@ -8,6 +8,7 @@
 import Parse
 import UIKit
 import Bolts
+import HockeySDK
 
 
 @UIApplicationMain
@@ -19,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        var sharedHockeyManager = BITHockeyManager.sharedHockeyManager()
+        sharedHockeyManager.configureWithIdentifier("f1d42545919d4c01a33e323fe281e681")
+        sharedHockeyManager.startManager()
+        sharedHockeyManager.authenticator.authenticateInstallation()
         // [Optional] Power your app with Local Datastore. For more info, go to
         /// https://parse.com/docs/ios/guide#local-datastore
         Parse.enableLocalDatastore()

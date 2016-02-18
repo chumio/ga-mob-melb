@@ -24,6 +24,7 @@ class Job:  NSObject
     var sheetThick:Int? = nil
     var elapsedTime:Double = 0.0
     var dayOfTheWeek = ""
+    var dateKeyString = ""
     // combine length width thick and colour
     
     func materialCombined () -> String {

@@ -29,6 +29,8 @@
 		28BBA2F61C609EC500C53880 /* iStatStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBA2F51C609EC500C53880 /* iStatStartVC.swift */; };
 		28BBA2F81C6230A000C53880 /* jobsCompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBA2F71C6230A000C53880 /* jobsCompletedVC.swift */; };
 		28BBA2FA1C6347FE00C53880 /* JobClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBA2F91C6347FE00C53880 /* JobClass.swift */; };
+		28CF6A881C6B2EFE00EBAE8E /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF6A851C6B2EFE00EBAE8E /* HockeySDK.framework */; };
+		28CF6A891C6B2EFE00EBAE8E /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28CF6A871C6B2EFE00EBAE8E /* HockeySDKResources.bundle */; };
 		E023470F1B677CD3004F2DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023470E1B677CD3004F2DBE /* AppDelegate.swift */; };
 		E02347141B677CD3004F2DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02347121B677CD3004F2DBE /* Main.storyboard */; };
 		E02347161B677CD3004F2DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02347151B677CD3004F2DBE /* Images.xcassets */; };
@@ -73,6 +75,8 @@
 		28BBA2F51C609EC500C53880 /* iStatStartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iStatStartVC.swift; path = ../iStatStartVC.swift; sourceTree = "<group>"; };
 		28BBA2F71C6230A000C53880 /* jobsCompletedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = jobsCompletedVC.swift; path = ../jobsCompletedVC.swift; sourceTree = "<group>"; };
 		28BBA2F91C6347FE00C53880 /* JobClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobClass.swift; sourceTree = "<group>"; };
+		28CF6A851C6B2EFE00EBAE8E /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		28CF6A871C6B2EFE00EBAE8E /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		E02347091B677CD3004F2DBE /* StatIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E023470D1B677CD3004F2DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E023470E1B677CD3004F2DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CF6A881C6B2EFE00EBAE8E /* HockeySDK.framework in Frameworks */,
 				28A22F251C58CBE40067C9EE /* libm.tbd in Frameworks */,
 				28A22F261C58CBE40067C9EE /* libsqlite3.tbd in Frameworks */,
 				28A22F271C58CBE40067C9EE /* libz.tbd in Frameworks */,
@@ -122,6 +127,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28CF6A841C6B2EFE00EBAE8E /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				28CF6A851C6B2EFE00EBAE8E /* HockeySDK.framework */,
+				28CF6A861C6B2EFE00EBAE8E /* Resources */,
+			);
+			path = HockeySDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		28CF6A861C6B2EFE00EBAE8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28CF6A871C6B2EFE00EBAE8E /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E02347001B677CD3004F2DBE = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +215,7 @@
 		E023472E1B679009004F2DBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28CF6A841C6B2EFE00EBAE8E /* HockeySDK.embeddedframework */,
 				28A22F1E1C58CBE40067C9EE /* libm.tbd */,
 				28A22F1F1C58CBE40067C9EE /* libsqlite3.tbd */,
 				28A22F201C58CBE40067C9EE /* libz.tbd */,
@@ -258,7 +281,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = abearablecode;
 				TargetAttributes = {
 					E02347081B677CD3004F2DBE = {
@@ -295,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02347141B677CD3004F2DBE /* Main.storyboard in Resources */,
+				28CF6A891C6B2EFE00EBAE8E /* HockeySDKResources.bundle in Resources */,
 				E02347191B677CD3004F2DBE /* LaunchScreen.xib in Resources */,
 				E02347161B677CD3004F2DBE /* Images.xcassets in Resources */,
 			);
@@ -383,10 +407,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -427,7 +453,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -451,12 +478,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = ParseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chumioinc.StatIT;
 				PRODUCT_NAME = StatIT;
 			};
 			name = Debug;
@@ -465,12 +495,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = ParseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chumioinc.StatIT;
 				PRODUCT_NAME = StatIT;
 			};
 			name = Release;
@@ -489,6 +522,7 @@
 				);
 				INFOPLIST_FILE = ParseDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abearablecode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = StatIT;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatIT.app/StatIT";
 			};
@@ -504,6 +538,7 @@
 				);
 				INFOPLIST_FILE = ParseDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abearablecode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = StatIT;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatIT.app/StatIT";
 			};

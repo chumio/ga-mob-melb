@@ -22,18 +22,86 @@ var machineHaltedTime = ""
 
 class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
         
-        if segue.identifier == "start2finish" {
+        if segue.identifier == "start2finish"
+        {
              let secondVC: jobsCompletedVC = segue.destinationViewController as! jobsCompletedVC
-            secondVC.myArray = myCompletedJobs
+            let myJobsDict = getMyJobsDictionary(myCompletedJobs)
+            secondVC.myJobsDictionary = myJobsDict
         }
+        else if segue.identifier == "jobsCompleted"
+            
+        {
+            let secondVC: jobsCompletedVC = segue.destinationViewController as! jobsCompletedVC
+            let myJobsDict = getMyJobsDictionary(myCompletedJobs)
+            secondVC.myJobsDictionary = myJobsDict
+                     
+        }
+        
         else
         {
-          let intVC: InterruptViewController = segue.destinationViewController as! InterruptViewController
-            
+            let intVC: InterruptViewController = segue.destinationViewController as! InterruptViewController
             intVC.recDate = machineHaltedTime
         }
+        
+    }
+    
+    
+    
+    func getMyJobsDictionary(jobsArray: Array<Job>) -> Dictionary<String, Array<Job>>? {
+        
+       var myJobDic = [String: [Job]]()
+        
+        for job in jobsArray
+        {
+           // check what jobday is
+      //-      job.jobDate
+            
+          let sectionKey = job.dateKeyString
+         
+            
+          // check for key in my existing dictionary
+            
+            if myJobDic[sectionKey] != nil {
+                // if the key exist in dic then append the job to the array value of that key
+                myJobDic[sectionKey]?.append(job)
+                
+                
+            } else {
+                // if key is does not exisit then add a new key with the value pair in the dictionary
+                myJobDic[sectionKey]=[job]
+
+            }
+            
+        }
+        return myJobDic
+        
+//        let job1 = Job()
+//        let job2 = Job()
+//        let job3 = Job()
+//        let job4 = Job()
+//        job1.project = "Array Apt"
+//        job2.project = "Classy apt"
+//        job3.project = "Bank Street"
+//        job4.project = "Coles Apt"
+//        
+        
+        /// create dict from array here
+        
+    
+
+        
+        
+        
+//        
+//        
+//        let myDict = ["Monday": [job1,job2,job3, job4],"Tuesday": [job3,job4]]
+//        
+//    
+//        return myDict
+    
     }
     
     ///   MACHINE HALTED
@@ -56,6 +124,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         
     }
+    @IBOutlet weak var startCircle: UIImageView!
     @IBOutlet weak var SizeOutlet: UITextField!
     @IBOutlet weak var ProjectOutlet: UITextField!
     @IBOutlet weak var pickerSize: UIPickerView!
@@ -80,12 +149,14 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var project:String = ""
     var picker = UIPickerView()
     var jobStartTime = ""
+    var dateKeyString = ""
    
     
    // JOB STARTED
     @IBAction func StartJob(sender: AnyObject) {
         
        let timtime = NSDate()
+        
         
         let dateTimeOnly = NSDateFormatter()
         dateTimeOnly.dateFormat = "h:mm:ss a"
@@ -97,6 +168,15 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let strTime = NSDateFormatter()
         strTime.dateFormat = "h:mm:ss a"
         
+        let sectionDateKey = NSDateFormatter()
+        sectionDateKey.dateFormat = "yyyyMMdd"
+        
+        var sectionDateKeyString = sectionDateKey.stringFromDate(timtime)
+        
+        dateKeyString = sectionDateKeyString
+        print(sectionDateKeyString)
+        
+        
         jobStartTime = strTime.stringFromDate(timtime)
         print("JOB START TIME \(jobStartTime)")
         
@@ -107,6 +187,8 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         let dateString = dateTimeOnly.stringFromDate(timtime)
         let dayString = dateDayOnly.stringFromDate(timtime)
+        print(dateString)
+        print(dayString)
 
         mydateStart = String(dateString)
         startDay = String(dayString)
@@ -114,7 +196,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         currentMaterialGettingWorked.text =
             ("\(picColour) \(length) x \(width) x \(thick)")
-        
+        startCircle.hidden = false
         pickerSize.hidden = true
         currentProject.text = project
         currentMaterialGettingWorked.hidden = false
@@ -122,7 +204,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         currentProject.hidden = false
         countingLabel.hidden = false
         countingLabel.text = String(counter)
-        startTimer = NSTimer.scheduledTimerWithTimeInterval(0.003, target:self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
+        startTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
         print(startTimer)
    
     }
@@ -133,6 +215,11 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
   
     
     /// JOB COMPLETE
+    
+  
+
+    
+ 
     
     @IBAction func finishJob(sender: AnyObject)
     {
@@ -148,10 +235,11 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         currentProject.hidden = true
         startTimer.invalidate()
         countingLabel.hidden = true
+        startCircle.hidden = true
         
         
         
-        var completedJob = Job()
+        let completedJob = Job()
         let timtime = NSDate()
         
         completedJob.sheetLength = length
@@ -166,6 +254,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         completedJob.jobFinishTime = timeFin.stringFromDate(timtime)
         completedJob.jobStartTime = jobStartTime
         completedJob.dayOfTheWeek = startDay
+        completedJob.dateKeyString = dateKeyString
         print("JOB STARTED TIME AT \(completedJob.jobFinishTime)")
         
         
@@ -173,7 +262,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         myCompletedJobs.append(completedJob)
 
-        print(myCompletedJobs)
+        print("My Completed Job Arrar \(myCompletedJobs)")
         performSegueWithIdentifier("start2finish", sender: sender)
       
     }
@@ -306,6 +395,7 @@ class iStatStartVCController: UIViewController, UIPickerViewDelegate, UIPickerVi
         currentMaterialGettingWorked.text = String (picker)
         currentProject.hidden = true
         countingLabel.hidden = true
+        startCircle.hidden = true
 
     }
     

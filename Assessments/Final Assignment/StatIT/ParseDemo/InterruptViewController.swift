@@ -147,8 +147,7 @@ class InterruptViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         noteText.layer.borderWidth = 0.5
         noteText.layer.borderColor = borderColor.CGColor
         noteText.layer.cornerRadius = 5.0
-        haltReason.layer.borderWidth = 2
-        haltReason.layer.borderColor = borderColor.CGColor
+       
         
         
         
